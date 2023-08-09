@@ -1,0 +1,11 @@
+Sharing Your Django App with Others
+
+You’ve learned the basics of a Django app and built out core functionality in Codecademy.
+Now it’s time to take the next step and learn how to deploy your site to share it with the internet!
+The first step would be to start working on a Django project on your local computer.
+In this module, you’ll learn how to install Django and how to use Python anywhere to deploy your site.
+When you’re ready, click next to get started.
+
+In this module, you’ll learn how to deploy a Django app on the internet!
+
+install_Django_in_the_virtual_environment
