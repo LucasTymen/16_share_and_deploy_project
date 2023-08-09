@@ -1,0 +1,114 @@
+Installing Django
+
+In this article, you will learn how to install a virtual environment then install Django in the virtual environment all on your own computer!
+Setting Up
+
+Django is a high-level web framework written in Python (==> https://www.codecademy.com/catalog/language/python).
+It's used to quickly develop complex database-heavy websites like Instagram, Robinhood, and Youtube.
+
+Since Django is based on Python you’ll need to install both Python and pip, Python’s package-management software which will allow us to install Django and other third-party packages.
+==> https://www.codecademy.com/articles/install-python3
+Read through and follow our Installing Python 3 and Python Packages article if you need some guidance.
+==> https://www.codecademy.com/articles/install-python3
+You can check to see if Python and pip are installed by using the following commands in the command-line tool:
+
+python3 --version
+
+
+pip --version
+
+
+If both were installed properly, the version that was installed will display.
+
+Now that you’ve made sure that your computer has Python and pip, there’s still one more step you need to take before installing Django which is installing a virtual environment.
+
+
+
+What’s a Virtual Environment?
+
+Sometimes you’ll need to work on multiple projects on the same computer.
+However, each project may require installing different third-party packages and libraries.
+Since you don’t want these packages and libraries from one project to spill over into all of your projects, virtual environments allow you to keep your projects isolated from each other.
+You can think of it as a protective bubble that allows you to install packages or configure settings without affecting any other projects.
+First, install a virtual environment and then install Django in the virtual environment.
+Installing a Virtual Environment
+
+In this walkthrough, you’ll go over how to install a virtual environment in Windows and MacOS.
+The first step you’ll need to take is to launch the command line interface.
+
+On Windows it’s called the Command Prompt:
+
+Windows Command Prompt
+
+On Mac it’s called the Terminal: MacOs Terminal
+
+Depending on your operating system you can execute the following commands to install a virtual environment:
+
+    The first command you’ll need to run is:
+
+python3 -m venv project_env
+
+
+The venv is a module that expects an environment name followed after it.
+The environment name is what your virtual environment will be called, almost like naming a file.
+Make sure there are no spaces in the environment name as it wouldn’t be recognized later on, instead use camel case or _ or - in place of space.
+In this case, the example’s environment name is project_env, but you can name it whatever you want.
+
+    After the command is executed, your environment should be created in a few seconds.
+    There will be no indication that the environment is created, however, you just need to activate it.
+    Activation is a little different depending on what operating system you’re using:
+
+On Windows, you need to begin the command with your environment name followed by Scripts\activate.bat like so:
+
+project_env\Scripts\.activate.bat
+
+
+On Mac, you need to begin the command with source followed by your environment name followed by bin/activate like so:
+
+source project_env/bin/activate
+
+
+You can tell if you’re in the virtual environment because your command prompt/terminal will have the name of the environment in parenthesis before every directory like so:
+(project_env). Same on both Windows and Mac.
+
+On Windows:
+
+(project_env) c:\Users\username>
+
+
+On Mac:
+
+(project_env) username ~ %
+
+
+Installing Django in our virtual environment
+
+Now that you have your virtual environment installed and activated, you can install Django. Installing Django uses the same steps for both Windows and Mac.
+
+    The first command we’ll need to run is
+
+pip3 install django
+
+
+This command will automatically install the latest version of Django for use.
+
+However, if we want to install a specific version of Django we can use the following command:
+
+pip3 install Django==3.2
+
+
+This might be useful if you’re in a team and everyone needs to be in a specific version of Django.
+
+    Whichever command you decide to use, it may take up to 30 seconds or longer to install Django depending on your internet speed.
+    If Django was successfully installed you’ll get a message of Successfully installed django-X.X. Where the X.X is the version number, like 3.2. Django Installation success Message
+
+    You can further check what version of Django you’re on by using the command:
+
+django-admin --version
+
+
+Conclusion
+
+Congratulations, you learned how to install a virtual environment so that you can properly work on a project on your own computer!
+Then you were able to install Django in your virtual environment and check what version was installed.
+Well done on taking your first steps to master Django, have fun creating amazing projects!
